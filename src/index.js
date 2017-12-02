@@ -1,16 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-class Form extends React.Component {
-  render() {
-    return (
-      <div className="game">
-      </div>
-    );
-  }
-}
+import InputForm from './components/InputForm'
 
 ReactDOM.render(
-  <Form />,
+  <InputForm />,
   document.getElementById('root')
 );

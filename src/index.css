@@ -1,0 +1,18 @@
+.InputForm {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+}
+
+.InputForm_prompt {
+  margin-bottom: 8px;
+}
+
+.InputForm_textarea {
+  margin-bottom: 8px;
+  height: 250px
+}
+
+.InputForm_submit {
+  width: 100px;
+}
