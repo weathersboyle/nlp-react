@@ -1,23 +1,30 @@
 import React, { Component } from 'react'
+
 import '../index.css';
+import api from '../api'
 
 export default class InputForm extends Component {
   constructor(props) {
     super(props)
     this.state = {
       input: ''
-    };
+    }
   }
 
   onChange = (event) => {
-    console.log('on change: ' + event.target.value)
     this.setState({
       input: event.target.value
     })
   }
 
   onSubmit = (event) => {
-    console.log('A name was submitted: ' + this.state.input)
+    const question = this.state.input
+    api.analyzeStackOverflowQuestion(question)
+      .then(
+        data => console.log("success"),
+        error => console.log("failure")
+      )
+
     event.preventDefault()
   }
 
