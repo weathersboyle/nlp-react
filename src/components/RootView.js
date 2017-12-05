@@ -89,7 +89,7 @@ export default class RootView extends Component {
 
   render() {
     return (
-      <div >
+      <div>
         <InputForm
           onSubmit={this.onSubmit}
         />
