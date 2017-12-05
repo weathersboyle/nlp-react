@@ -6,4 +6,4 @@ import RootView from './components/RootView'
 ReactDOM.render(
   <RootView />,
   document.getElementById('root')
-);
+)

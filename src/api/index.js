@@ -20,7 +20,7 @@ export const analyzeStackOverflowQuestion = async (question) => {
   // return response.json()
 
   // TODO remove this
-  return JSON.parse('{"suggestedTags" : ["JAVA", "ANDROID"], "tips" : ["tip1", "tip2"], "similarQuestionUrl" : "www.robboyle.com"}')
+  return JSON.parse('{"suggestedTags" : ["JAVA", "ANDROID"], "tips" : ["tip1", "tip2"], "similarQuestionUrl" : "http://www.google.com"}')
 }
 
 export default {

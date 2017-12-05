@@ -16,3 +16,25 @@
 .InputForm_submit {
   width: 100px;
 }
+
+.RootView_primaryTopic {
+  margin-top: 48px;
+}
+
+.RootView_suggestedTags {
+  margin-top: 32px;
+}
+
+.RootView_tips {
+  margin-top: 32px;
+}
+
+.RootView_similarQuestionPrompt {
+  display: flex;
+  flex-direction: row;
+  margin-top: 32px;
+}
+
+.RootView_similarQuestionLink {
+  margin-left: 4px;
+}
