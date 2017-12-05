@@ -13,10 +13,14 @@ export const analyzeStackOverflowQuestion = async (question) => {
     body,
   })
 
-  if (!response.ok) {
-    throw new Error(`${response.status}`)
-  }
-  return response.json()
+  // TODO uncomment this
+  // if (!response.ok) {
+  //   throw new Error(`${response.status}`)
+  // }
+  // return response.json()
+
+  // TODO remove this
+  return JSON.parse('{"suggestedTags" : ["JAVA", "ANDROID"], "tips" : ["tip1", "tip2"], "similarQuestionUrl" : "www.robboyle.com"}')
 }
 
 export default {

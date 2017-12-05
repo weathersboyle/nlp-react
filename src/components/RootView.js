@@ -14,7 +14,7 @@ export default class RootView extends Component {
   onSubmit = (input) => {
     api.analyzeStackOverflowQuestion(input)
       .then(
-        data => console.log("success"),
+        data => console.log(data),
         error => console.log("failure")
       )
   }
