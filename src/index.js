@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import InputForm from './components/InputForm'
+import RootView from './components/RootView'
 
 ReactDOM.render(
-  <InputForm />,
+  <RootView />,
   document.getElementById('root')
 );

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 
 import '../index.css';
-import api from '../api'
 
 export default class InputForm extends Component {
   constructor(props) {
@@ -18,12 +17,8 @@ export default class InputForm extends Component {
   }
 
   onSubmit = (event) => {
-    const question = this.state.input
-    api.analyzeStackOverflowQuestion(question)
-      .then(
-        data => console.log("success"),
-        error => console.log("failure")
-      )
+    const { input } = this.state
+    this.props.onSubmit(input)
 
     event.preventDefault()
   }
@@ -52,6 +47,6 @@ export default class InputForm extends Component {
           value="Submit"
         />
       </form>
-    );
+    )
   }
 }
